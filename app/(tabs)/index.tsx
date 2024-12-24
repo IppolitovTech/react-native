@@ -1,17 +1,26 @@
-import { View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import LittleLemonHeader from '@/components/LittleLemonHeaderComponent';
+import LittleLemonFooter from '@/components/LittleLemonFooterComponent';
 
 export default function App() {
   return (
     <View
-      style={{
-        flex: 1,
-        backgroundColor: '#495E57',
-      }}>
+      style={styles.content}>
       <LittleLemonHeader />
+      <View style={styles.content}>
+
+      </View>
+      <LittleLemonFooter />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  content: {
+    flex: 1,
+    flexDirection: 'column'
+  }
+});
 
 // import { Image, StyleSheet, Platform } from 'react-native';
 

@@ -2,11 +2,11 @@ import * as React from 'react';
 import { View, Text } from 'react-native';
 import globalStyles from '@/styles/Styles';
 
-export default function LittleLemonHeader() {
+export default function LittleLemonFooter() {
     return (
         <View style={globalStyles.viewFooterAndHeader}>
             <Text style={globalStyles.textFooterAndHeader}>
-                Welcome to Little Lemon
+                All rights reserved by Little Lemon, 2022
             </Text>
         </View>
     );
